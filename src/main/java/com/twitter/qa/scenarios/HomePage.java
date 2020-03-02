@@ -42,8 +42,8 @@ public class HomePage extends TestBase{
 		@FindBy(xpath="//div[@data-testid='tweetButton']//div")
 		WebElement btnPostReply;
 		
-		/*@FindBy(xpath="//span[contains(text(),'This post will be deleted!!')]")
-		WebElement tweeterPostUser1;*/
+		@FindBy(xpath="//span[contains(text(),'This Post will be DELETED!!')]")
+		WebElement tweeterPostUser1;
 		
 		@FindBy(xpath="//article//div//div[2]//div[@aria-label='More']")
 		WebElement btnMore;
@@ -69,7 +69,7 @@ public class HomePage extends TestBase{
 		}
 		
 		public void validateTwitterTextArea() {
-			twitterTextArea.sendKeys("This is the auotomated twitter Post!!");
+			twitterTextArea.sendKeys("This is a auotomated twitter Post!!");
 		}
 		
 		public void validatebtnPublishTweet() {
@@ -90,8 +90,7 @@ public class HomePage extends TestBase{
 		}
 		
 		public void validateDeletePost() {
-			twitterTextArea.sendKeys("This post will be deleted!!");
-			btnPublishTweet.click();
+			tweeterPostUser1.click();
 			btnMore.click();
 			btnDelete.click();
 			btnConfirmDelete.click();

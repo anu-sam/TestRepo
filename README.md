@@ -16,10 +16,10 @@
 	- Twitter_Phase_1\drivers\chromedriver\chromedriver.exe
 	- Twitter_Phase_1\drivers\geckodriver\geckodriver.exe
 
-5. If you intended to run the suite in firefox browser, go to“config.properties”file under“com.twitter.qa.config”directory and change the“browser”property to“firefox".
+5. If you intended to run the suite in firefox browser, go to“config.properties”file under“com.twitter.qa.config”directory and change the“browser”property to “firefox".
 
 6. Using window command prompt, go to directory where you downloaded the local copy of the project.
 
 7. Type "mvn install".
 
-8. After the test execution, go inside“test-output”folder created under the project, right click on the“index.html”file and copy the path. Paste the copied path in to a web browser and you'll see the complete test results output for the completed automation run.
+8. After the test execution, go inside “test-output” folder in the project directory, open the “index.html” file from a web browser.
